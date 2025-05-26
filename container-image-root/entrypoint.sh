@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-[ "$IP" == "" ] && IP=$(curl ifconfig.co/ip -s)
+[ "$IP" == "" ] && IP=$(curl icanhazip.com -s)
 
 service ntp start
 cron
